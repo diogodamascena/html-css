@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste de blocos</title>
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding:0px
+    }
+    body{
+        background-color: chocolate;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    header{
+        padding: 30px;
+    }
+
+    nav{
+        background-color: darkolivegreen;
+        padding: 10px;
+    }
+    nav > a{
+        padding: 10px;
+        font-weight: bold;
+        text-decoration: none;
+        color: aliceblue;
+    }
+
+    nav > a:hover{
+        color: darkolivegreen;
+        background-color:chocolate;
+        transition: 0.4s;
+    }
+
+    main{
+        width: 820px;
+        margin: auto;
+    }
+    main h1{
+        text-align: center;
+        margin: 15px;
+    }
+    main > .cards p{
+        padding: 10px;
+    }
+
+    .cards{
+        display: flex;
+    }
+
+    .cards > div{
+        border-radius: 15px;
+        margin: 5px;
+    }
+    .cards > div:hover{
+        background-color: yellow;
+        color: black;
+        transition: 0.4s;
+    }
+
+    .abc{
+        background-color: brown;
+        width: 266.6px;
+        height: 300px;
+    }
+    .abc>.filho{
+        display: none;
+    }
+    .abc:hover> .filho{
+        display: block;
+        background-color: aliceblue;
+        border-radius: 15px;
+        margin: 3px;
+        width: 260px;
+        height: 50px;
+    }
+    .bcd{
+        background-color: black;
+        color: aliceblue;
+        width: 266.6px;
+        height: 300px;
+    }
+    .cde{
+        background-color: blue;
+        width: 266.6px;
+        height: 300px;
+    }
+
+    /*fora da div.cards*/
+    .aaa{
+        background-color: indigo;
+        width: 800px;
+        height: 170px;
+        border-radius: 15px;
+        padding: 10px;
+    }
+
+    .img{
+        position: relative;
+        margin-left: auto;
+        margin-right:auto ;
+        width: 492px;
+        height: 615px;
+    }
+
+</style>
+<body>
+    <header><h1>TESTE COM BLOCOS</h1></header>
+    <nav>
+        <a href="">aaaaaaaa</a>
+        <a href="">bbbbbbbb</a>
+        <a href="">cccccccc</a>
+    </nav>
+
+    <main>
+        <h1>teste</h1>
+        <div class="cards">
+            <div class="abc">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia nemo ullam minima voluptates fugiat, eligendi accusantium dolorum culpa exercitationem, sequi pariatur quasi voluptate vel at voluptatem impedit veniam. Iste, assumenda.</p>
+                <div class="filho"><p><a href="#">link</a></p></div>
+            </div>
+            <div class="bcd">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt id praesentium saepe neque rerum eius a voluptas, fuga odio! Ullam sequi, molestiae dolorem quibusdam suscipit laborum harum ipsa odio itaque.</p>
+            </div>
+            <div class="cde">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt dicta perspiciatis amet vitae qui. Culpa rem velit libero non, commodi ullam, expedita officiis quas voluptatem nam quibusdam nobis aliquid! Non!</p>
+            </div>
+        </div>
+        <div class="aaa">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et repudiandae veniam excepturi libero ipsam accusantium architecto eum asperiores ducimus. Error repellendus iure neque praesentium nostrum et molestiae quia quae ipsum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam laudantium at rem sit, mollitia repellat? Doloribus minima vitae voluptatibus nesciunt, quod error corrupti inventore quos molestiae, ducimus nobis omnis eveniet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur magni, deserunt atque ea iure maxime praesentium pariatur facilis nesciunt neque sint officia assumenda aliquid accusantium expedita explicabo corporis. Temporibus, odio?</p>
+        </div>
+
+        <div class="img">
+            <img src="imagens/capa-individual.jpg" alt="">
+        </div>
+
+    </main>
+</body>
+</html>
